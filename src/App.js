@@ -34,11 +34,11 @@ function App() {
     // }
   return (
       <AnimatePresence>
-          <motion.div className={"flex flex-col bg-amber-50 backdrop-blur backdrop-blur-2xl align-center justify-center w-full h-full"}>
-              <motion.div className={"flex sm:flex-row flex-col justify-center sm:h-16 h-24 w-full shadow shadow-lg shadow-gray-200"}>
+          <motion.div className={"flex flex-col min-h-screen backdrop-blur backdrop-blur-2xl align-center justify-center w-full h-full"}>
+              <motion.div className={"flex bg-gray-300 sm:flex-row flex-col justify-center sm:h-16 h-24 w-full shadow shadow-lg shadow-gray-200"}>
                   <div className={"my-2"}>
-                      <input type={"text"} className={"sm:mx-0 mx-8 border border-black sm:w-96 sm:w-56 h-14 placeholder:text-2xl placeholder:font-medium text-2xl h-12"} onChange={(e) => setQuery(e.target.value)} placeholder={"Enter Search Term"}/>
-                      <button className={"sm:max-0 mx-8 w-56 self-end text-blue-600 font-mono font-medium text-2xl underline hover:no-underline"} onClick={() => data()}>Search</button>
+                      <input type={"text"} className={"sm:mx-0 rounded-l rounded text-center outline-none placeholder:font-thin placeholder:font-mono placeholder:text-center mx-8 sm:w-56 placeholder:text-2xl placeholder:font-medium text-2xl h-10"} onChange={(e) => setQuery(e.target.value)} placeholder={"Search Term"}/>
+                      <button className={"sm:max-0 h-10 rounded rounded-l bg-gray-200 mx-8 w-56 self-end text-blue-600 font-mono font-medium text-2xl "} onClick={() => data()}>Search</button>
                   </div>
               </motion.div>
               <div className={"sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col justify-center mx-auto"}>
@@ -72,7 +72,7 @@ function App() {
                           : <h1>NO DATA!</h1>
                   }
               </div>
-              <div className={"backdrop-blur backdrop-blur-lg bg-gray h-10 overflow-hidden w-full"}>
+              <div className={"backdrop-blur mt-auto backdrop-blur-lg bg-gray h-10 overflow-hidden w-full"}>
                   <div className={"flex my-2 sm:flex-row justify-center flex-col"}>
                         <h1 className={"self-center font-mono text-2xl"}>Created By <a className={"text-blue-600"} href={"https://portfolio-one-wine-77.vercel.app/"} target={"_blank"} rel={"noreferrer"}>Mukul Phougat</a></h1>
                   </div>
