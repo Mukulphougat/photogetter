@@ -5,10 +5,10 @@ import {motion, AnimatePresence} from "framer-motion";
 
 function App() {
     const [state, setState] = useState([]);
-    const [cQuery, setQuery] = useState('');
+    const [cQuery, setQuery] = useState('nature');
     // const dotenv = require("dotenv");
     // dotenv.config()
-    const unsplashApi = 'ZosXZmP4IeDzOWiQfQhQOyC43TKDd5EiB4jCn9ULZJk';
+    const unsplashApi = 'XRVFhZfszh4RQji82Ejyj8gNAeaYYcRuPcDsExDq6dQ';
     // console.log(unsplashApi);
     // const [urls, setUrls] = useState([]);
     // const [size, setSize] = useState(0);
